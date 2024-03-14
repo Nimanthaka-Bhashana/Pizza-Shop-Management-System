@@ -1,0 +1,44 @@
+.form_container {
+    width: 30%;
+}
+
+@media screen and (max-width: 5000px) {
+    .form_container {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 5000px) {
+    .form_container {
+        width: 80%;
+    }
+
+}
+
+body {
+    background-color:rgb(238, 27, 80);
+
+}
+
+.left-align-label {
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form_container {
+    width: 500px;
+    height: 500px;
+    padding: 5px;
+    background-color: white;
+    background-image:"src\Images\pizza-time-tasty-homemade-traditional-pizza-italian-recipe.jpg" ;
+}
+
+.form {
+    margin: 40px;
+}
+
+.a.form {
+    margin: 40px;
+}

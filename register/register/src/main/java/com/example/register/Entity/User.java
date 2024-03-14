@@ -1,0 +1,66 @@
+package com.example.register.Entity;
+
+
+
+import jakarta.persistence.*;
+import org.antlr.v4.runtime.misc.NotNull;
+
+@Entity
+@Table(name =  "user_tbl")
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "employee_Name")
+    private String employee_Name;
+
+    @Column(name = "email")
+    private String email;
+    @Column(name = "password")
+    private String password;
+    @Column(name = "role")
+    private String role;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmployeeName() {
+        return employee_Name;
+    }
+
+    public void setEmployeeName(String employee_Name) {
+        this.employee_Name = employee_Name ;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+}
+
